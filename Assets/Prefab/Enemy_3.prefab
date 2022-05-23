@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4440210914350775644}
   - component: {fileID: 4440210914350775645}
   - component: {fileID: 4440210914350775643}
-  - component: {fileID: 4440210914350775641}
+  - component: {fileID: 3321184271970341542}
   m_Layer: 0
   m_Name: Enemy_3
   m_TagString: Enemy
@@ -31,6 +31,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.41, y: 0.8000001, z: 11.58}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9091520432440864363}
   m_Father: {fileID: 0}
@@ -55,6 +56,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -114,7 +116,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &4440210914350775641
+--- !u!114 &3321184271970341542
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,10 +125,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4440210914350775650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53cdd93b9534b884286e0633a8498019, type: 3}
+  m_Script: {fileID: 11500000, guid: 5326bebbd3a811e4aae67a22ab094966, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 55
+  speed: 60
 --- !u!1001 &9091520432440438901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -189,11 +191,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 114920, guid: ff249e9534924c744bdfa6a3d2d1746c, type: 3}
   m_PrefabInstance: {fileID: 9091520432440438901}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &9091520432440864363 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 433694, guid: ff249e9534924c744bdfa6a3d2d1746c, type: 3}
-  m_PrefabInstance: {fileID: 9091520432440438901}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &293409812355102277
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -207,3 +204,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.13092312, y: 0.45808935, z: 0.3762063}
   m_Center: {x: -0.0009314039, y: 0.22952962, z: 0.053322967}
+--- !u!4 &9091520432440864363 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 433694, guid: ff249e9534924c744bdfa6a3d2d1746c, type: 3}
+  m_PrefabInstance: {fileID: 9091520432440438901}
+  m_PrefabAsset: {fileID: 0}
