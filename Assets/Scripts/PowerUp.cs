@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUp : NPC // Inheritance
+public class PowerUp : NPC // INHERITANCE
 {
-    public override void OnCollisionEnter(Collision col) // Polimorphism
+    public override void OnCollisionEnter(Collision col) // POLIMORPHISM
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            col.gameObject.GetComponent<PlayerController>().Puntuacion += 20;
+            col.gameObject.GetComponent<PlayerController>().RecibePuntos(20);
         }
     }
 }

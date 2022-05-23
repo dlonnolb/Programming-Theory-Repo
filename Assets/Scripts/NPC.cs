@@ -1,12 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
     [SerializeField] float speed = 40.0f;
-    private float zDestroy = -10.0f;
-    //private int puntos = 20;
+    private float zDestroy = -10.0f;    
     private Rigidbody enemyRb;
 
     void Start()
@@ -23,7 +20,7 @@ public class NPC : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public virtual void OnCollisionEnter(Collision col)
+    public virtual void OnCollisionEnter(Collision col) // POLYMORPHISM
     {
         if (col.gameObject.CompareTag("Player"))
         {
